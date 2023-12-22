@@ -1,0 +1,306 @@
+<html>
+	<head>
+		<title>contact</title>
+	</head>
+	
+	<style type="text/css">
+	
+	*
+	{
+		margin:5px;
+		padding:5px;
+		box-sizing:border-box;
+	
+	}
+	
+	
+	body {
+		background-image: url(images/background.jpg);
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		background-size: cover;
+	}
+	
+	
+	#link-div
+	{
+		width: 100%;
+		height:50px;
+		padding-left:2%;
+		padding-right:2%;
+		border-left:20px;
+		border-right:20px;
+		margin:auto;
+		text-align:right;
+		font-size:20;
+		a:link {
+		  color:#C0C0C0;
+		  background-color: transparent;
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: #C0C0C0;
+		  background-color: transparent;
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  color: #C0C0C0;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  color: #C0C0C0;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+	}
+	
+	#form-div
+	{
+		width:80%;
+		margin: 50px auto;
+		
+		p
+		{
+			margin-bottom:40px;
+			color: #C0C0C0;
+			font-size: 20px;
+			text-align:left;
+			font-family: "Times New Roman", Times, serif;
+			
+		}
+		
+		h3
+		{
+			font-family:Times;
+			text-align:center;
+			font-size: 50px;
+		}
+	
+	}
+	
+	
+	#contact-box 
+	{
+		background: lightgray;
+		display: flex;
+	}
+	
+	#contact-left
+	{
+		flex-basis: 60%;
+		padding: 40px 60px;
+		background: lightgray;
+		color: #2C3E50;
+	}
+	
+	#contact-right 
+	{
+		flex-basis: 60%;
+		padding: 40px;
+		background: #FDFEFE;
+		color: #2C3E50;
+		
+	}
+	
+	h1
+	{
+		margin-bottom:10px;
+		font-family:Times;
+		text-align:center;
+		color: #C0C0C0;
+		font-size: 80px;
+	}
+	}
+	
+	#input-row
+	{
+		display: flex;
+		margin-bottom: 20px;
+	}
+	
+	#input-row #input-group
+	{
+		flex-basis:45%;
+	}
+	
+	input
+	{
+		width:100%;
+		border: 1px solid;
+		padding-bottom: 5px;
+	}
+	
+	textarea
+	{
+		width: 100%;
+		border: 1px solid;
+		padding: 10px;
+	}
+	
+	button 
+	{
+		background: #FDFEFE;
+		width:100%;
+		border: none;
+		color: #1C2833;
+		height: 35px;
+		border-radius: 30px;
+		margin-top: 20px;
+	}
+	
+	#contact-left h3
+	{
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+	
+	#contact-right h3
+	{
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+	
+	tr td:first-child
+	{
+		border: 0px solid;
+	}
+		
+	td 
+	{
+	a:link {
+		  color:#1C2833;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+
+		a:visited {
+		  color: #1C2833;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+
+		a:hover {
+		  color: #1C2833;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  color: #1C2833;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+	}
+	
+	
+	#footer-div
+	{
+		width: 100%;
+		margin-top: 50px;
+		text-align: center;
+		padding: 10px;
+		background-color: lightgray;
+		color: #1C2833;
+		font-size:20;
+		a:link {
+		  color:#1C2833;
+		  background-color: transparent;
+		  text-decoration: none;
+		}
+
+		a:visited {
+		  color: #1C2833;
+		  background-color: transparent;
+		  text-decoration:none;
+		}
+
+		a:hover {
+		  color: #1C2833;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  color: #1C2833;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+		p {
+			font-size: 20px;
+			background-color: transparent;
+			color: #1C2833;
+			margin:auto;
+		}
+}
+</style>
+
+<h1>Give your feedback</h1>
+<body>
+	
+	<div id="link-div">
+		<a href="index.html">Home</a>
+		<a href="education.html">Education</a>
+		<a href="hobby.html">Hobby</a>
+		<a href="#">Contact</a>
+	</div>
+	
+	<div id="form-div">
+		<p>I would like your feedback for me to improve in the future.<br>Feel free to get in touch with me.</p>
+		<div id="contact-box">
+			<div id="contact-left">
+				<h3>Send your feedback</h3>
+					<form name="feedback" method="post" action="mailto:nurinaazulaika@gmail.com">
+						<div id="input-row">
+							<div id="input-group">
+								<label>Name</label>
+								<input type="name">
+							</div>
+							<div id="input-group">
+								<label>Subject</label>
+								<input type="subject">
+							</div>
+						</div>	
+							<label>Message</label>
+							<textarea rows="5"></textarea>
+							
+							<button type="submit">SUBMIT</button>
+		</form>
+		
+			</div>
+			<div id="contact-right">
+				<h3>Reach me</h3>
+				
+				<table>
+					<tr>
+						<td>Email</td>
+						<td><a href="mailto:nurinaazulaika@gmail.com">nurinaazulaika@gmail.com</a></td>
+					</tr>
+					<tr>
+						<td>Instagram</td>
+						<td><a href="https://www.instagram.com/nurrinism/">@nurrinism</a></td>
+					</tr>
+					<tr>
+						<td>Phone number</td>
+						<td><a href="https://wa.link/0boa8t">+60165919177</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+<footer>
+	<div id="footer-div">
+		<a href="#">Home</a> |
+		<a href="education.html">Education</a> |
+		<a href="hobby.html">Hobby</a> |
+		<a href="contact.html">Contact</a>
+		<p>copyright<br>© Nurina Zulaika Binti Zainuddin</p>
+	</div>
+	</footer>
+</html>
